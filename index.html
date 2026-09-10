@@ -387,6 +387,31 @@
             border-top: 1px solid var(--border);
         }
 
+        /* LOGO IMAGE */
+        .site-logo-img {
+            height: 32px;
+            display: block;
+        }
+
+        .hero-logo-img {
+            height: 64px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        /* CRY → REAL IMAGE */
+        .hero-real-image {
+            width: 96px;
+            height: 96px;
+            object-fit: contain;
+            margin: 0 auto 20px;
+            display: block;
+            background: var(--bg-card-2);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            padding: 8px;
+        }
+
         .contact-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -527,12 +552,11 @@
 <body>
 
     <div class="hero-wrap">
-        <nav>
-            <a href="/" class="logo">
-                <span class="logo-accent"></span>
-                Superpro
-            </a>
-            <ul class="nav-links">
+    <nav>
+        <a href="/" class="logo">
+            <img class="site-logo-img" src="images/superpro-logo-small.png" alt="Superpro Laptop Repair">
+        </a>
+        <ul class="nav-links">
                 <li><a href="#pain">Why It Hurts</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Photos</a></li>
@@ -542,7 +566,7 @@
         </nav>
 
         <header class="hero">
-            <span class="hero-emoji">😭</span>
+            <img class="hero-real-image" src="images/repair-shop-interior.jpg" alt="Superpro repair shop - New Road, Pako, Kathmandu">
 
             <div class="badge">
                 🔧 BGA / CHIP LEVEL REPAIR EXPERT
@@ -780,7 +804,8 @@
     </section>
 
     <footer>
-        <p>
+        <p style="text-align:center;">
+            <img style="height:40px; display:block; margin:0 auto 8px;" src="images/superpro-logo-small.png" alt="Superpro Laptop Repair">
             &copy; 2026 Superpro — BGA/Chip Level Repair Expert<br>
             New Road, Pako, Kathmandu, Nepal &nbsp;|&nbsp;
             <a href="tel:015366882">01-5366882</a> &nbsp;|&nbsp;
