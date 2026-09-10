@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superpro Laptop Repair — BGA/Chip Level Expert | New Road, Pako, Kathmandu</title>
+    <meta name="description" content="Superpro Laptop Repair — BGA/Chip Level Repair Expert in New Road, Pako, Kathmandu. Dell, Lenovo, HP, Asus, Acer, MacBook — any brand, any problem. Screen, battery, water damage, dead motherboard, BGA reballing. 50,000+ repairs done. 100% satisfaction guaranteed. Phone: 01-5366882">
+    <meta name="robots" content="index, follow">
+
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --bg-card: #ffffff;
+            --bg-card-2: #f1f5f9;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --muted: #64748b;
+            --accent: #e11d48;
+            --accent-2: #fb7185;
+            --accent-bg: #fff1f2;
+            --good: #16a34a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .hero-wrap {
+            background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-card-2) 100%);
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 0 24px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.2rem;
+            letter-spacing: -0.02em;
+            color: var(--text);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-accent {
+            width: 12px;
+            height: 12px;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 12px var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--accent); }
+
+        .nav-cta {
+            background: var(--accent);
+            color: #fff !important;
+            padding: 6px 16px;
+            border-radius: 6px;
+            font-weight: 600 !important;
+        }
+
+        .nav-cta:hover { background: var(--accent-2); }
+
+        .hero {
+            text-align: center;
+            padding: 64px 24px 56px;
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        .hero-emoji {
+            font-size: 3rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--accent-bg);
+            border: 1px solid rgba(225, 29, 72, 0.2);
+            color: var(--accent);
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 0.02em;
+        }
+
+        .hero h1 {
+            font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+            margin-bottom: 14px;
+        }
+
+        .hero h1 .highlight {
+            color: var(--accent);
+        }
+
+        .hero .subtitle {
+            font-size: 1.05rem;
+            color: var(--text);
+            max-width: 640px;
+            margin: 0 auto 28px;
+            line-height: 1.7;
+        }
+
+        .hero .subtitle em {
+            color: var(--accent);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 11px 22px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.93rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-2);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(225, 29, 72, 0.25);
+        }
+
+        .btn-ghost {
+            background: var(--bg-card);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-ghost:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+            padding: 28px 24px;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            flex-wrap: wrap;
+            background: var(--bg-card);
+        }
+
+        .stat { text-align: center; }
+
+        .stat-num {
+            font-size: 1.9rem;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: -0.02em;
+        }
+
+        .stat-label {
+            font-size: 0.82rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-top: 4px;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 52px 24px;
+        }
+
+        .section-label {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .section-title {
+            font-size: clamp(1.2rem, 2.8vw, 1.65rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+
+        .section-sub {
+            color: var(--muted);
+            max-width: 640px;
+            margin-bottom: 32px;
+            font-size: 0.92rem;
+        }
+
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 14px;
+        }
+
+        .pain-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+        }
+
+        .pain-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 4px 16px rgba(225, 29, 72, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .pain-icon {
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .pain-card:nth-child(1) .pain-icon { background: #fef2f2; }
+        .pain-card:nth-child(2) .pain-icon { background: #fefce8; }
+        .pain-card:nth-child(3) .pain-icon { background: #eff6ff; }
+        .pain-card:nth-child(4) .pain-icon { background: #fef2f2; }
+        .pain-card:nth-child(5) .pain-icon { background: #f0fdf4; }
+        .pain-card:nth-child(6) .pain-icon { background: #faf5ff; }
+
+        .pain-card h3 {
+            font-size: 0.92rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .pain-card p {
+            font-size: 0.83rem;
+            color: var(--muted);
+            line-height: 1.55;
+        }
+
+        .services-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .services-table th {
+            text-align: left;
+            padding: 11px 16px;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            background: var(--bg-card-2);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .services-table td {
+            padding: 12px 16px;
+            font-size: 0.86rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        .services-table tr:last-child td { border-bottom: none; }
+
+        .services-table td:first-child {
+            font-weight: 600;
+            color: var(--text);
+            white-space: nowrap;
+            width: 26%;
+        }
+
+        .check { color: var(--good); font-weight: 700; margin-right: 4px; }
+
+        .special-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 4px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+        }
+
+        .gallery-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .gallery-item:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+            background: var(--bg-card-2);
+        }
+
+        .gallery-caption {
+            padding: 10px 14px;
+            font-size: 0.82rem;
+            color: var(--muted);
+            text-align: center;
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+        }
+
+        .contact-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px 28px;
+            max-width: 540px;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        .contact-card .company-name {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 2px;
+            letter-spacing: -0.02em;
+        }
+
+        .contact-card .company-special {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.82rem;
+            margin-bottom: 14px;
+            letter-spacing: 0.02em;
+        }
+
+        .contact-card .tagline-small {
+            color: var(--muted);
+            font-size: 0.88rem;
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+
+        .contact-card .contact-main {
+            color: var(--text);
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin: 8px 0 14px;
+            display: inline-flex;
+            padding: 12px 20px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            gap: 8px;
+            transition: all 0.2s;
+        }
+
+        .contact-card .contact-main:hover {
+            background: var(--accent-2);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(225, 29, 72, 0.25);
+        }
+
+        .contact-card .phone-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .contact-card .phone-item {
+            font-size: 0.88rem;
+            color: var(--text);
+        }
+
+        .contact-card .phone-item strong {
+            color: var(--muted);
+            font-weight: 500;
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 2px;
+        }
+
+        .contact-card .address-row {
+            margin-top: 14px;
+            font-size: 0.85rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .contact-card .social-row {
+            margin-top: 14px;
+        }
+
+        .contact-card .social-row a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.85rem;
+            padding: 4px 10px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .contact-card .social-row a:hover {
+            background: var(--accent-bg);
+            border-color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            padding: 28px 24px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.78rem;
+            line-height: 1.6;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 600px) {
+            .nav-links { gap: 12px; }
+            .nav-links a:not(.nav-cta) { display: none; }
+            .stats { gap: 16px; padding: 20px 12px; }
+            .hero { padding: 40px 14px 36px; }
+            section { padding: 32px 14px; }
+            .contact-card { padding: 20px 14px; }
+            .contact-card .phone-row { gap: 10px; }
+            .gallery-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-wrap">
+        <nav>
+            <a href="/" class="logo">
+                <span class="logo-accent"></span>
+                Superpro
+            </a>
+            <ul class="nav-links">
+                <li><a href="#pain">Why It Hurts</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Photos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.facebook.com/laptoprepairinnewroad/" target="_blank" rel="noopener" class="nav-cta">Facebook Page →</a></li>
+            </ul>
+        </nav>
+
+        <header class="hero">
+            <span class="hero-emoji">😭</span>
+
+            <div class="badge">
+                🔧 BGA / CHIP LEVEL REPAIR EXPERT
+            </div>
+
+            <h1>
+                Your laptop broke.<br>
+                <span class="highlight">First you cried. Now we fix it.</span>
+            </h1>
+
+            <p class="subtitle">
+                Dell, Lenovo, HP, Asus, Acer, MacBook — <em>any brand, any problem.</em><br>
+                Broken screen? Dead battery? Water spill? Notebook won't turn on at all?<br>
+                BGA reballing, chip-level soldering, motherboard repair — <em>we go deeper than anyone in Kathmandu.</em>
+            </p>
+
+            <div class="hero-actions">
+                <a href="tel:015366882" class="btn btn-primary">📞 Call us now: 01-5366882</a>
+                <a href="#services" class="btn btn-ghost">See what we fix →</a>
+            </div>
+        </header>
+    </div>
+
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-num">50,000+</div>
+            <div class="stat-label">Repairs Done</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Satisfaction Guaranteed</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">BGA Expert</div>
+            <div class="stat-label">Chip-Level Technology</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">2,358+</div>
+            <div class="stat-label">Facebook Page Reach</div>
+        </div>
+    </div>
+
+    <section id="pain">
+        <div class="section-label">Why It Hurts — We Understand</div>
+        <h2 class="section-title">Your laptop broke. How did it feel?</h2>
+        <p class="section-sub">We know. That sinking feeling when your screen cracks, your battery dies, or your laptop just won't turn on. Your work, your studies, your livelihood — everything stops. First you cry. Then you look for help. <strong>We are here.</strong></p>
+
+        <div class="pain-grid">
+            <div class="pain-card">
+                <div class="pain-icon">😱</div>
+                <h3>Broken / Cracked Screen</h3>
+                <p>One drop, one press, one accident — and your screen is shattered. You can't see anything. You can't work. You can't study. We replace it with OEM-grade panels — True Tone and color calibration restored too.</p>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">😤</div>
+                <h3>Battery Dies Too Fast</h3>
+                <p>You plug in every hour. Your laptop won't last you even one meeting, one class, one trip. You carry the charger everywhere. We replace with 100% health cells — no system warnings, full life back again.</p>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">💧</div>
+                <h3>Water / Liquid Spilled on It</h3>
+                <p>Your chai, your coffee, your water bottle — spilled on your laptop by accident. Panic. You think it's dead. 90%+ of these we bring back to life — ultrasonic cleaning, micro-soldering, component-level rescue.</p>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">😰</div>
+                <h3>Won't Turn On — Dead Motherboard</h3>
+                <p>You press the power button. Nothing. No light. No sound. You try charging. Still nothing. You feel your stomach drop. We diagnose at the motherboard level — find the short, fix the IC, bring it back.</p>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">😨</div>
+                <h3>BGA / Chip-Level Failure</h3>
+                <p>Your laptop suddenly shuts down, overheats, shows blue screen, or the GPU/CPU fails. This is the hardest repair — most shops turn you away. Not us. We do BGA reballing, chip replacement, micro-soldering — permanently.</p>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">😞</div>
+                <h3>Slow / Old / Can't Keep Up</h3>
+                <p>Your laptop was fast once. Now it freezes, hangs, takes forever to start. You're thinking of buying a new one. Wait — we upgrade your SSD, add RAM (up to 32GB), migrate your data. Faster than new, half the cost.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="section-label">What We Fix — Everything Under One Roof</div>
+        <h2 class="section-title">Complete Laptop Repair — BGA/Chip Level Included</h2>
+        <p class="section-sub">New Road, Pako, Kathmandu — one location, every service. Check the table below — all services with details.</p>
+
+        <table class="services-table">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>What We Do</th>
+                    <th>Estimated Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BGA / Chip-Level Repair<br><span class="special-badge">Specialty</span></td>
+                    <td>
+                        <span class="check">✓</span> GPU/CPU reballing and replacement<br>
+                        <span class="check">✓</span> RAM, chip IC and micro-soldering<br>
+                        <span class="check">✓</span> Xeltek programmer used<br>
+                        <span class="check">✓</span> Permanent fix — not temporary
+                    </td>
+                    <td>1 — 3 days</td>
+                </tr>
+                <tr>
+                    <td>Laptop Screen / Display Repair</td>
+                    <td>
+                        <span class="check">✓</span> LCD and OLED panels both<br>
+                        <span class="check">✓</span> True Tone restore and color calibration<br>
+                        <span class="check">✓</span> OEM / Grade-A quality
+                    </td>
+                    <td>30 min — 2 hours</td>
+                </tr>
+                <tr>
+                    <td>Battery Replacement</td>
+                    <td>
+                        <span class="check">✓</span> 100% health new cells<br>
+                        <span class="check">✓</span> No system warnings<br>
+                        <span class="check">✓</span> Thermal testing done
+                    </td>
+                    <td>30 minutes</td>
+                </tr>
+                <tr>
+                    <td>Motherboard / IC-Level Repair</td>
+                    <td>
+                        <span class="check">✓</span> Soldering, micro-soldering<br>
+                        <span class="check">✓</span> Dead IC, power IC, battery IC<br>
+                        <span class="check">✓</span> Short circuit diagnosis
+                    </td>
+                    <td>1 — 3 days</td>
+                </tr>
+                <tr>
+                    <td>Water Damage Rescue</td>
+                    <td>
+                        <span class="check">✓</span> Ultrasonic cleaning bath<br>
+                        <span class="check">✓</span> Component-level corrosion removal<br>
+                        <span class="check">✓</span> 90%+ success rate
+                    </td>
+                    <td>1 — 4 days</td>
+                </tr>
+                <tr>
+                    <td>Keyboard / Trackpad</td>
+                    <td>
+                        <span class="check">✓</span> Key replacement and full keyboard assembly<br>
+                        <span class="check">✓</span> Spill damage cleanup<br>
+                        <span class="check">✓</span> Touchpad repair and replacement
+                    </td>
+                    <td>1 — 2 days</td>
+                </tr>
+                <tr>
+                    <td>SSD / RAM Upgrade + Data Recovery</td>
+                    <td>
+                        <span class="check">✓</span> HDD → SSD cloning migration<br>
+                        <span class="check">✓</span> RAM upgrade (up to 32GB)<br>
+                        <span class="check">✓</span> Data recovery consultation
+                    </td>
+                    <td>1 day</td>
+                </tr>
+                <tr>
+                    <td>Software Troubleshooting</td>
+                    <td>
+                        <span class="check">✓</span> OS reinstall, format, boot issue fix<br>
+                        <span class="check">✓</span> Virus / malware removal<br>
+                        <span class="check">✓</span> Driver fix and updates
+                    </td>
+                    <td>1 — 2 days</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="gallery">
+        <div class="section-label">Our Work — Real Photos from Our Shop</div>
+        <h2 class="section-title">See Our Shop — Real Repairs, Real Equipment</h2>
+        <p class="section-sub">These are actual photos from Superpro repair shop, New Road, Pako, Kathmandu. This is where we fix laptops every day.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img class="gallery-img" src="images/repair-workbench-equipment.jpg" alt="Repair workbench with oscilloscope, microscope, and soldering station" loading="lazy">
+                <div class="gallery-caption">Our workbench — oscilloscope, microscope, multimeter, soldering station</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="images/bga-cpu-placement.jpg" alt="BGA CPU being placed on laptop motherboard during reballing repair" loading="lazy">
+                <div class="gallery-caption">BGA CPU placement — chip-level reballing repair in progress</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="images/huawei-motherboard-hinge.jpg" alt="Huawei laptop motherboard and hinge assembly opened for repair" loading="lazy">
+                <div class="gallery-caption">Huawei laptop opened — motherboard and hinge assembly</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="images/repair-shop-interior.jpg" alt="Superpro repair shop interior with shelves and work station" loading="lazy">
+                <div class="gallery-caption">Our shop — shelves full of parts, work station ready</div>
+            </div>
+        </div>
+
+        <p style="text-align:center; margin-top:20px; font-size:0.85rem; color:var(--muted);">
+            More photos and videos:
+            <a href="https://www.facebook.com/laptoprepairinnewroad/" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">Facebook Page: laptoprepairinnewroad</a>
+            (2,358+ likes, 8+ people visited recently)
+        </p>
+    </section>
+
+    <section id="contact">
+        <div class="section-label">Contact Us</div>
+        <h2 class="section-title">We Are Here to Help You</h2>
+        <p class="section-sub">New Road, Pako, Kathmandu — come see us or call. Free diagnostic check included.</p>
+
+        <div class="contact-card">
+            <div class="company-name">Superpro</div>
+            <div class="company-special">BGA / Chip Level Repair Expert</div>
+            <p class="tagline-small">Small help. Big hope. In this hard time, let's be each other's support.</p>
+
+            <a href="tel:015366882" class="contact-main">📞 01-5366882</a>
+
+            <div class="phone-row">
+                <div class="phone-item">
+                    <strong>Landline</strong>
+                    01-5366882
+                </div>
+                <div class="phone-item">
+                    <strong>Address</strong>
+                    New Road, Pako, Kathmandu, Nepal
+                </div>
+            </div>
+
+            <div class="address-row">
+                🌐 http://superpro.com.np
+            </div>
+
+            <div class="social-row">
+                <a href="https://www.facebook.com/laptoprepairinnewroad/" target="_blank" rel="noopener">📘 Visit our Facebook Page →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2026 Superpro — BGA/Chip Level Repair Expert<br>
+            New Road, Pako, Kathmandu, Nepal &nbsp;|&nbsp;
+            <a href="tel:015366882">01-5366882</a> &nbsp;|&nbsp;
+            <a href="https://www.facebook.com/laptoprepairinnewroad/" target="_blank" rel="noopener">Facebook Page</a>
+        </p>
+    </footer>
+
+</body>
+</html>
